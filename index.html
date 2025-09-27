@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Foodz - El-Chefe the Chatbot</title>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Welcome to Foodz</h1>
+    <p>You can chat with our smart assistant "El-Chefe" using the chat bubble below!</p>
+  </div>
+
+  <!-- Dialogflow Messenger -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+    intent="WELCOME"
+    chat-title="El-Chefe"
+    agent-id="96c88991-87d7-4713-854b-2b395893953f"
+    language-code="en"
+    ></df-messenger>
+
+</body>
+</html>
