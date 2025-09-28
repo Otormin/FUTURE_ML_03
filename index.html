@@ -1,20 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Foodz - El-Chefe the Chatbot</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lagos Kitchen - Authentic Nigerian Cuisine</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <header>
+        <nav class="container">
+            <div class="logo">Lagos Kitchen</div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
 
-  <div class="container">
-    <h1>Welcome to Foodz</h1>
-    <p>You can chat with our smart assistant "El-Chefe" using the chat bubble below!</p>
-  </div>
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Lagos Kitchen</h1>
+            <p>Experience the Rich Flavors of Authentic Nigerian Cuisine</p>
+            <p>You can chat with our smart assistant "El-Chefe" using the chat bubble below!</p>
+            <a href="#menu" class="cta-button">Explore Our Menu</a>
+        </div>
+        <div class="scroll-indicator">
+            <div style="font-size: 2rem;">↓</div>
+        </div>
+    </section>
 
-  <!-- Dialogflow Messenger -->
-  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h2>Our Story</h2>
+                    <p>Welcome to Lagos Kitchen, where tradition meets taste in every dish. Our family-owned restaurant brings you the authentic flavors of Nigeria, prepared with love and served with pride.</p>
+                    <p>From the bustling streets of Lagos to your table, we recreate the vibrant culinary heritage of Nigeria using traditional recipes passed down through generations. Each meal tells a story of culture, community, and exceptional taste.</p>
+                    <p>Join us for an unforgettable dining experience that celebrates the rich diversity and bold flavors that make Nigerian cuisine truly special.</p>
+                </div>
+                <div class="about-image fade-in">
+                    <img src="restaurantImage.jpeg" alt="Restaurant Image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2 class="fade-in">Our Signature Dishes</h2>
+            <div class="menu-grid">
+                <div class="menu-item fade-in">
+                    <h3>Jollof Rice</h3>
+                    <p>Our famous spiced rice cooked with tomatoes, onions, and aromatic spices. Served with your choice of protein.</p>
+                    <div class="price">₦2,500</div>
+                </div>
+                <div class="menu-item fade-in">
+                    <h3>Beans</h3>
+                    <p>Slow-cooked, richly seasoned beans for a hearty and satisfying meal.</p>
+                    <div class="price">₦2,000</div>
+                </div>
+                <div class="menu-item fade-in">
+                    <h3>Egusi Soup</h3>
+                    <p>Traditional melon seed soup with leafy vegetables, meat, and fish. Served with pounded yam or fufu.</p>
+                    <div class="price">₦2,000</div>
+                </div>
+                <div class="menu-item fade-in">
+                    <h3>Fufu</h3>
+                    <p>Soft and stretchy cassava delight, perfect with your favourite soup or sauce.</p>
+                    <div class="price">₦200</div>
+                </div>
+                <div class="menu-item fade-in">
+                    <h3>Bread</h3>
+                    <p>Freshly baked, fluffy and golden, great on its own or as a side.</p>
+                    <div class="price">₦1,800</div>
+                </div>
+                <div class="menu-item fade-in">
+                    <h3>Chicken</h3>
+                    <p>Tender, marinated chicken cooked to perfection with bold spices.</p>
+                    <div class="price">₦5,000</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="fade-in">Visit Us Today</h2>
+            <div class="contact-content">
+                <div class="contact-info fade-in">
+                    <h3>Location & Hours</h3>
+                    <p><strong>Address:</strong><br>
+                    Lagos, Nigeria</p>
+                    
+                    <p><strong>Phone:</strong><br>
+                    +234 907 337 2467</p>
+                    
+                    <p><strong>Hours:</strong><br>
+                    Monday - Sunday: 11:00 AM - 11:00 PM</p>
+                    
+                    <p><strong>Email:</strong><br>
+                    yjesse330@gmail.com</p>
+                </div>
+                <div class="contact-form fade-in">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Let us know how we can help you..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dialogflow Messenger -->
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <df-messenger
     intent="WELCOME"
     chat-title="El-Chefe"
@@ -22,5 +142,11 @@
     language-code="en"
     ></df-messenger>
 
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Lagos Kitchen. All rights reserved. | Bringing Nigerian flavors to your table</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
 </body>
 </html>
