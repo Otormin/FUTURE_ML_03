@@ -1,4 +1,4 @@
-* {
+*:not(df-messenger):not(df-messenger *):not(iframe):not(iframe *) {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -383,6 +383,14 @@ footer {
     color: #f39c12;
 }
 
+/* dialogflow css */
+df-messanger{
+    position: fixed !important;
+    bottom: 20px !important;
+    right: 20px !important;
+    z-index: 9999 !important;
+}
+
 /* Animations */
 @keyframes fadeInUp {
     from {
@@ -440,5 +448,11 @@ footer {
     .contact-content {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+
+    df-messanger{
+        bottom: 20px !important;
+        right: 20px !important;
+        z-index: 9999 !important;
     }
 }
