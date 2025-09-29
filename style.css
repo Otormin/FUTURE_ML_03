@@ -1,5 +1,4 @@
-/* *:not(df-messenger):not(df-messenger *):not(iframe):not(iframe *) { */
-*{
+*:not(df-messenger):not(df-messenger *):not(iframe):not(iframe *) {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
