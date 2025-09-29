@@ -1,4 +1,5 @@
-*:not(df-messenger):not(df-messenger *):not(iframe):not(iframe *) {
+/* *:not(df-messenger):not(df-messenger *):not(iframe):not(iframe *) { */
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -451,8 +452,9 @@ df-messanger{
     }
 
     df-messanger{
-        bottom: 20px !important;
-        right: 20px !important;
-        z-index: 9999 !important;
+        bottom: 15px !important;
+        right: 15px !important;
+        --df-messanger-caht-window-height: 400px;
+        --df-messanger-caht-window-width: 300px;
     }
 }
