@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>El-Chefe | AI Assistant</title>
+  <link rel="stylesheet" href="chatbot.css">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <header>
+    <h1>Meet <span style="color:#ffcc00;">El-Chefe</span></h1>
+    <p>Your Lagos Kitchen AI assistant – available 24/7 to answer your questions, provide support, and make life easier.</br>Chat with El-Chefe using the chat bubble below</p>
+  </header>
+
+  <!-- Dialogflow Messenger -->
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+      intent="WELCOME"
+      chat-title="El-Chefe"
+      agent-id="96c88991-87d7-4713-854b-2b395893953f"
+      language-code="en"
+  ></df-messenger>
+
+</body>
+</html>

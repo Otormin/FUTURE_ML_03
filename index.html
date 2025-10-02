@@ -28,31 +28,9 @@
         <div class="hero-content">
             <h1>Lagos Kitchen</h1>
             <p>Experience the Rich Flavors of Authentic Nigerian Cuisine</p>
-            <p>You can chat with our smart assistant "El-Chefe" using the chat bubble below!</p>
-            <a href="#" class="cta-button" onclick="openChat()">Chat with El-Chefe</a>
+            <p>You can chat with our smart assistant "El-Chefe" by clicking the button below!</p>
+            <a href="chatbot.html" class="cta-button">Chat with El-Chefe</a>
         </div>
-
-        <!-- Dialogflow Messenger -->
-        <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
-        <df-messenger
-            intent="WELCOME"
-            chat-title="El-Chefe"
-            agent-id="96c88991-87d7-4713-854b-2b395893953f"
-            language-code="en"
-        ></df-messenger>
-
-        <script>
-            window.onload = function () {
-                window.openChat = function () {
-                    const chatIcon = document.querySelector('df-messenger');
-                    if (chatIcon) {
-                        chatIcon.setAttribute('expanded', 'true');
-                    } else {
-                        console.error("Chatbot widget not found.");
-                    }
-                }
-            };
-        </script>
     </section>
 
     <section id="about" class="about">
